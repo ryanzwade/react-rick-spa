@@ -41,7 +41,7 @@ function RandomCharacter() {
         style={{ maxWidth: '100%', height: 'auto' }}
       />
       <h1 className="custom-font" style={{ fontSize: '325%' }}>
-        Rick and Morty Random Character
+        Random Character
       </h1>
       {randomCharacter ? (
         <Character

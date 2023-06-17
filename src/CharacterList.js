@@ -57,10 +57,12 @@ function CharacterList() {
             <thead>
               <tr>
                 <th>Name</th>
+                <th>Picture</th>
                 <th>Species</th>
                 <th>Origin</th>
                 <th>Status</th>
-                <th>Picture</th>
+
+
               </tr>
             </thead>
             <tbody>
@@ -69,9 +71,6 @@ function CharacterList() {
                   <td>
                     <Link to={`/characters/${character.id}`}>{character.name}</Link>
                   </td>
-                  <td>{character.species}</td>
-                  <td>{character.origin.name}</td>
-                  <td>{character.status}</td>
                   <td>
                     <img
                       src={character.image}
@@ -79,6 +78,10 @@ function CharacterList() {
                       style={{ width: "150px", border: "2.5px solid #000000" }}
                     />
                   </td>
+                  <td>{character.species}</td>
+                  <td>{character.origin.name}</td>
+                  <td>{character.status}</td>
+
                 </tr>
               ))}
             </tbody>

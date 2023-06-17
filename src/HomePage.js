@@ -45,7 +45,7 @@ function HomePage() {
         </div>
         <div className="col-12 mt-3">
           <img
-            src="https://initiate.alphacoders.com/images/796/stretched-1920-1080-796108.jpg?2111"
+            src="637645.jpg"
             alt="Home page"
             className="img-fluid"
             style={{
