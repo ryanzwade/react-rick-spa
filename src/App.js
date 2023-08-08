@@ -21,7 +21,7 @@ function App() {
 
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharacterList />} />
-          <Route path="/characters/:id" element={<CharacterDetails />} />
+          <Route path="/characters/${id}" element={<CharacterDetails />} />
           <Route path="/locations" element={<LocationList />} />
           <Route path="/random" element={<RandomCharacter />} />
           <Route path="*" element={<NotFoundPage />} />
