@@ -25,10 +25,6 @@ const Footer = () => {
     marginTop: '20px',
   };
 
-  const logoStyle = {
-    maxWidth: '10%',
-    height: 'auto',
-  };
 
   return (
     <footer style={footerStyle}>
