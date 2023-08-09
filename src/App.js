@@ -2,7 +2,6 @@
 import './App.css';
 import CharacterList from './CharacterList';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
 import NotFoundPage from './NotFoundPage';
@@ -18,10 +17,10 @@ function App() {
       <Nav />
       <div className="container-fluid" style={{ backgroundColor: '#26b1c6', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <Routes>
-
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharacterList />} />
-          <Route path="/characters/${id}" element={<CharacterDetails />} />
+          {/* Dynamic routing with template literal syntax */}
+          <Route path="/characters/:id" element={<CharacterDetails />} />
           <Route path="/locations" element={<LocationList />} />
           <Route path="/random" element={<RandomCharacter />} />
           <Route path="*" element={<NotFoundPage />} />
@@ -31,4 +30,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 export default App;

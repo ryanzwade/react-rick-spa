@@ -25,29 +25,36 @@ const Footer = () => {
     marginTop: '20px',
   };
 
+  const logoStyle = {
+    maxWidth: '10%',
+    height: 'auto',
+  };
+
   return (
     <footer style={footerStyle}>
       <div style={containerStyle}>
         <div style={columnStyle}>
-          <h4>
-            <img src="/rmlogo.png" alt="Rick and Morty Logo" />
-          </h4>
+
           <ul>
             <li>This website was made using</li>
             <li>the Rick and Morty Api at</li>
             <li><a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">https://rickandmortyapi.com/</a></li>
+            {/* <h5>
+            <img src="/footerpic.png" alt="Rick and Morty Logo" />
+          </h5> */}
           </ul>
         </div>
         <div style={columnStyle}>
-          <h4></h4>
+
           <ul>
             <li></li>
             <li></li>
-            <li></li>
+            <li> <p><a href="https://www.linkedin.com/in/ryanzwade/">Visit Ryan Z Wade's LinkedIn</a></p></li>
           </ul>
+
         </div>
         <div style={columnStyle}>
-          <h4></h4>
+          <p><a href="https://ryanzwade.netlify.app/">Visit Ryan Z Wade's website</a></p>
           <ul>
             <li></li>
             <li></li>
